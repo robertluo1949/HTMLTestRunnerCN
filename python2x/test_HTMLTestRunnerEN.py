@@ -85,8 +85,8 @@ if __name__ == ‘python‘:
 ---试了不行
 '''
 if __name__ == '__main__':
-    #确定生成报告的路径
-    filePath ='F:\\HTMLTestRunnerEN.html'
+    #确定生成报告的路径，当前脚本目录
+    filePath ='\.\\HTMLTestRunnerEN.html'
     fp = file(filePath,'wb')
     #生成报告的Title,描述
     runner = HTMLTestRunnerEN.HTMLTestRunner(

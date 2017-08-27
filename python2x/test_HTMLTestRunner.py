@@ -16,7 +16,8 @@ def suite():
     suiteTest.addTest(testadd("test_add2"))
     return suiteTest
 if __name__=="__main__":
-    filepath='\.\\pyresult.html'
+    ##确定生成报告的路径，当前脚本目录
+    filepath='\.\\HTMLTestRunner.html'
     fp=file(filepath,'wb')
     #定义测试报告的标题与描述
     runner = HTMLTestRunner.HTMLTestRunner(stream=fp,title=u'我是测试报告的标题',description=u'我是测试报告的描述')
